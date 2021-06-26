@@ -36,7 +36,6 @@ body{
     border: 2px solid #4c6986;
     transition: all 0.4s ease;
     cursor: pointer;
-    /* font-weight: bold; */
     margin-top: 30px;
 }
 
@@ -131,6 +130,27 @@ h1{
          flex-direction: column;
      }
      .left{
+         text-align: center;
          margin-bottom: 30px;
      }
+     .restart{
+
+        margin: 20px auto;
+     }
+     
+}
+
+@media only screen and (max-width: 550px){
+    .game{
+        margin: 0;
+        width: 370px;
+        height: 370px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .restart{
+        width: 155px;
+        height: 45px;
+    }
 }
