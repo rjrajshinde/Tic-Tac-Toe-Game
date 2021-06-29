@@ -4,15 +4,25 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    
 }
+
 
 body{
     font-family: 'Merriweather Sans', sans-serif;
-    color: #4c6986;
+    --primary-color: #4c6986;
+    --secondary-color: #fff;
+}
+
+.dark{
+    --primary-color: #fff;
+    --secondary-color: #4c6986;
+    background-color: black;
 }
 
 .title{
     max-width: 500px;
+    color: var(--primary-color);
 }
 
 .wrapper{
@@ -27,25 +37,32 @@ body{
 
 /* start button */
 .restart{
+    color: var(--primary-color);
     width: 175px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    border: 2px solid #4c6986;
+    border: 2px solid var(--primary-color);
     transition: all 0.4s ease;
     cursor: pointer;
     margin-top: 30px;
+}
+
+.restart:hover{
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 h1{
     font-size: 60px;
 }
 
-.restart:hover{
-    color: white;
-    background: #4c6986;
+#icon{
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 500px;
 }
 
 .game{
@@ -96,7 +113,6 @@ h1{
     align-items: center;
     justify-content: center;
     font-size: 80px;
-    background-color: white;
     cursor: pointer;
 }
 
@@ -152,5 +168,10 @@ h1{
     .restart{
         width: 155px;
         height: 45px;
+    }
+    #icon{
+        margin-left: 350px;
+        width: 30px;
+        height: 30px;
     }
 }
