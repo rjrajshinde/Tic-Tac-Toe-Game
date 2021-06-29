@@ -13,7 +13,6 @@ export default class Game {
     }
 
     makeMove(i){
-
         if(this.endOfGame()){
             return;
         }

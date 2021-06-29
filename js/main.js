@@ -25,8 +25,10 @@ function onTileClick(i){
 }
 
 function onRestartClick(){
+    const winner = document.querySelector('.winner');
     game = new Game();
     gameView.updateBoard(game);
+    winner.innerHTML = ``;
 }
 
 gameView.updateBoard(game);

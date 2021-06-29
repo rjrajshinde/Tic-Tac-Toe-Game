@@ -139,6 +139,19 @@ h1{
     color: #23CE6B;
 }
 
+.winner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
 
 
 @media only screen and (max-width: 1050px){
@@ -152,6 +165,9 @@ h1{
      .restart{
 
         margin: 20px auto;
+     }
+     .winner{
+         margin-top: 300px;
      }
      
 }
@@ -173,5 +189,9 @@ h1{
         margin-left: 350px;
         width: 30px;
         height: 30px;
+    }
+    .winner{
+        margin-top: 100px;
+        font-size: 30px;
     }
 }
