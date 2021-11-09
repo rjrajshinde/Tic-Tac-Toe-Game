@@ -4,6 +4,6 @@
 >with the dark mode
 >It's mobile responsive
 
-I built this with the reference of YouTube Videos
+>> I built this by watching some YouTube Videos
 
 ### This site is live here https://king-tictactoe.netlify.app/
